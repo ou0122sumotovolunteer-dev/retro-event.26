@@ -5,6 +5,30 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>レトロこみちイベント | 洲本市</title>
   <style>
+
+     
+ /* ★控えめで上品なテキストホバーエフェクト★ */
+h3:hover, a:hover, .section-title:hover {
+    transition: all 0.25s ease-in-out !important;
+    transform: scale(1.06) !important;
+
+    /* 柔らかいレトロ光 */
+    text-shadow:
+        0 0 4px rgba(255,255,255,0.6),
+        0 0 8px rgba(255,200,150,0.5) !important;
+
+    color: #fffaf0 !important;
+    letter-spacing: 0.5px;
+
+    animation: soft-wobble 0.35s ease-in-out infinite alternate;
+}
+
+/* 優しい揺れアニメーション */
+@keyframes soft-wobble {
+    0% { transform: scale(1.06) translateX(0); }
+    100% { transform: scale(1.06) translateX(2px); }
+}
+    
 /* Ensure icon-circle buttons are visually distinct and hover-ready */
 .icon-circle {
   display: inline-block;
