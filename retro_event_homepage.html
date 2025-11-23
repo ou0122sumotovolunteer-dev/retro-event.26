@@ -13,8 +13,10 @@
   cursor: pointer;
 }
 .icon-circle:hover {
-  transform: scale(1.08);
-  box-shadow: 0 6px 14px rgba(0,0,0,0.18);
+  transform: scale(1.22) rotate(0deg);
+  box-shadow: 0 14px 28px rgba(0,0,0,0.28);
+  filter: brightness(1.20);
+  animation: wobble 0.6s ease-in-out infinite;
 }
     body {
       font-family: "Yu Mincho", "Hiragino Mincho ProN", serif;
@@ -93,6 +95,13 @@ a[href="#visitor"]:hover, a[href="#know"]:hover {
   box-shadow: 0 10px 20px rgba(0,0,0,0.25);
   filter: brightness(1.05);
 }
+@keyframes wobble {
+  0% { transform: scale(1.22) rotate(0deg); }
+  25% { transform: scale(1.24) rotate(2deg); }
+  50% { transform: scale(1.22) rotate(0deg); }
+  75% { transform: scale(1.24) rotate(-2deg); }
+  100% { transform: scale(1.22) rotate(0deg); }
+}
 </style>
 <style>
 /* Hover effects for circular icons */
@@ -109,7 +118,8 @@ a[href="#visitor"]:hover, a[href="#know"]:hover {
 }
 .icon-circle:hover img {
   opacity: 1;
-  filter: brightness(2) saturate(1.4);
+  filter: brightness(3.2) saturate(2.2) contrast(1.5);
+  transform: scale(1.45);
 }
 </style>
 </head>
@@ -153,17 +163,17 @@ a[href="#visitor"]:hover, a[href="#know"]:hover {
       </a>
 
       <a href=\"timetable.html\" class=\"icon-circle\" style="width:180px; height:180px; background:linear-gradient(135deg,#9fe7c8,#4ac79b); border-radius:50%; border:2px solid #ddd; display:flex; flex-direction:column; align-items:center; justify-content:center; text-decoration:none; color:#333; font-size:1.2rem; box-shadow:0 3px 8px rgba(0,0,0,0.08);"; border-radius:50%; border:2px solid #ddd; display:flex; flex-direction:column; align-items:center; justify-content:center; text-decoration:none; color:#333; font-size:1.2rem; box-shadow:0 3px 8px rgba(0,0,0,0.08);">
-        <img src="icon-time.png" style="width:45px; margin-bottom:10px;">
+        <img src="time.svg" style="width:45px; margin-bottom:10px;">
         タイムテーブル
       </a>
 
       <a href=\"search.html\" class=\"icon-circle\" style="width:180px; height:180px; background:linear-gradient(135deg,#ffe9a3,#ffd54f); border-radius:50%; border:2px solid #ddd; display:flex; flex-direction:column; align-items:center; justify-content:center; text-decoration:none; color:#333; font-size:1.2rem; box-shadow:0 3px 8px rgba(0,0,0,0.08);"; border-radius:50%; border:2px solid #ddd; display:flex; flex-direction:column; align-items:center; justify-content:center; text-decoration:none; color:#333; font-size:1.2rem; box-shadow:0 3px 8px rgba(0,0,0,0.08);">
-        <img src="icon-search.png" style="width:45px; margin-bottom:10px;">
+        <img src="search.svg" style="width:45px; margin-bottom:10px;">
         企画検索
       </a>
 
       <a href=\"list.html\" class=\"icon-circle\" style="width:180px; height:180px; background:linear-gradient(135deg,#d7b3ff,#b57aff); border-radius:50%; border:2px solid #ddd; display:flex; flex-direction:column; align-items:center; justify-content:center; text-decoration:none; color:#333; font-size:1.2rem; box-shadow:0 3px 8px rgba(0,0,0,0.08);"; border-radius:50%; border:2px solid #ddd; display:flex; flex-direction:column; align-items:center; justify-content:center; text-decoration:none; color:#333; font-size:1.2rem; box-shadow:0 3px 8px rgba(0,0,0,0.08);">
-        <img src="icon-list.png" style="width:45px; margin-bottom:10px;">
+        <img src="list.svg" style="width:45px; margin-bottom:10px;">
         企画一覧
       </a>
 
@@ -182,16 +192,16 @@ a[href="#visitor"]:hover, a[href="#know"]:hover {
       <img src="map.svg" style="width:24px;"><br>Map
     </div>
     <div style="text-align:center;">
-      <img src="icon-time.png" style="width:24px;"><br>Timetable
+      <img src="time.svg" style="width:24px;"><br>Timetable
     </div>
     <div style="text-align:center;">
-      <img src="icon-search.png" style="width:24px;"><br>Search
+      <img src="search.svg" style="width:24px;"><br>Search
     </div>
     <div style="text-align:center;">
-      <img src="icon-user.png" style="width:24px;"><br>My Page
+      <img src="user.svg" style="width:24px;"><br>My Page
     </div>
     <div style="text-align:center;">
-      <img src="icon-list.png" style="width:24px;"><br>List
+      <img src="list.svg" style="width:24px;"><br>List
     </div>
   </nav>
 
